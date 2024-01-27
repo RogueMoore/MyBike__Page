@@ -1,0 +1,16 @@
+//utilities
+@import "../utilities/reset";
+@import "../utilities/vars";
+@import "../utilities/mixins";
+@import "../utilities/modern-normalize.css";
+
+//styles
+@import "./page";
+@import "./header";
+@import "./top-actions";
+@import "./icon";
+@import "./section";
+@import "./about-us";
+@import "./compare-bikes";
+@import "./details";
+@import "./contacts";
