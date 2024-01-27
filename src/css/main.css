@@ -1417,6 +1417,53 @@ p {
   margin: 0 0 16px 0;
 }
 
+.details__photo-container {
+  position: relative;
+  width: 100%;
+  max-height: 130px;
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+@media (min-width: 744px) {
+  .details__photo-container {
+    max-height: 188px;
+  }
+}
+@media (min-width: 1260px) {
+  .details__photo-container {
+    max-height: 320px;
+    margin-bottom: 16px;
+  }
+}
+.details__photo-container::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.details__photo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.details__link {
+  margin: 0 0 8px 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+.details__text {
+  margin: 0 0 40px 0;
+}
+@media (min-width: 1260px) {
+  .details__text {
+    margin: 0 0 48px 0;
+  }
+}
+
 .compare-bikes__content {
   display: -webkit-box;
   display: -ms-flexbox;
