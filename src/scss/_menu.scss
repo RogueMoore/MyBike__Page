@@ -1,0 +1,67 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: #c2c2c2;
+
+  transition: transform 0.3s;
+  transform: translateX(-100%);
+  pointer-events: none;
+
+  &:target {
+    transform: translateX(0);
+    pointer-events: all;
+  }
+
+  &__list {
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__link {
+    color: $main-black-color;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    padding-bottom: 8px;
+    border-bottom: 1px solid #c2c2c2;
+    transition: border 0.3s;
+
+    &:hover {
+      border-bottom: 1px solid $main-black-color;
+    }
+  }
+
+  &__number {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: inherit;
+    border: none;
+    padding: 0;
+
+    &:hover {
+      border: none;
+    }
+  }
+
+  &__book-a-test-ride {
+    padding-bottom: 8px;
+    border-bottom: 1px solid $main-black-color;
+
+    font-size: 12px;
+    line-height: 16px;
+
+    width: fit-content;
+  }
+}

@@ -21,21 +21,21 @@
     }
   }
 
-  &__logo {
-    background-image: url(../images/svg/logo-mobile.svg);
-    background-repeat: no-repeat;
+  &__cross {
+    background-image: url(../images/svg/icon-cross.svg);
+  }
 
+  &__logo {
     width: 130px;
     height: 38px;
 
     @include onTablet {
-      background-image: url(../images/svg/logo.svg);
       width: 187px;
       height: 56px;
     }
   }
 
-  &-header-container {
+  &__header-container {
     display: flex;
     flex-direction: row;
     align-items: center;

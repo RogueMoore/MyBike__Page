@@ -1,10 +1,15 @@
 .top-actions {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  padding: 24px 0 24px 0;
+  padding: 24px 0 48px 0;
 
   @include onTablet {
-    padding: 36px 0 36px 0;
+    padding: 36px 0 48px 0;
+  }
+
+  @include onDesktop {
+    padding-bottom: 60px;
   }
 }

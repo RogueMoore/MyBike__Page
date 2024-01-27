@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -17,17 +17,58 @@
   </head>
   <body class="body__page">
     <header class="header">
-      <div class="container container--h100">
+      <div class="container">
         <div class="top-actions">
-          <a href="#" class="icon__logo"> </a>
+          <a href="#">
+            <svg class="icon__logo">
+              <use href="./images/svg/icon-logo--white.svg#logo--white"></use>
+            </svg>
+          </a>
 
-          <div class="icon-header-container">
-            <a href="#" class="icon icon__phone"> </a>
-            <a href="#" class="icon icon__burger"> </a>
+          <div class="icon__header-container">
+            <a href="tel:+1 234 5555-55-55" class="icon icon__phone"> </a>
+            <a href="#menu" class="icon icon__burger"> </a>
           </div>
         </div>
-          <h1 class="header__title">Take the Streets</h1>
+        <h1 class="header__title">Take the Streets</h1>
       </div>
     </header>
+
+    <aside class="menu" id="menu">
+      <div class="container">
+        <div class="top-actions">
+          <a href="#">
+            <svg class="icon__logo">
+              <use href="./images/svg/icon-logo--black.svg#logo--black"></use>
+            </svg>
+          </a>
+
+          <a href="#" class="icon icon__cross"> </a>
+        </div>
+
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link"> Home </a>
+          </li>
+          <li class="menu__item">
+            <a href="#about-us" class="menu__link"> About Us </a>
+          </li>
+          <li class="menu__item">
+            <a href="#compare-bikes" class="menu__link"> Compare Bikes </a>
+          </li>
+          <li class="menu__item">
+            <a href="#details" class="menu__link"> Details </a>
+          </li>
+          <li class="menu__item">
+            <a href="#contacts" class="menu__link"> Contacts </a>
+          </li>
+        </ul>
+
+        <a href="tel:+1 234 5555-55-55" class="menu__link menu__number"
+          >+1 234 5555-55-55</a
+        >
+        <p class="menu__book-a-test-ride menu__link">Book a test ride</p>
+      </div>
+    </aside>
   </body>
 </html>
