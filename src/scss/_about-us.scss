@@ -1,0 +1,46 @@
+.about-us {
+  &__content {
+    display: block;
+
+    @include onTablet {
+      display: flex;
+      gap: 64px;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+
+    text-align: left;
+
+    @include onTablet {
+      font-size: 48px;
+    }
+    @include onDesktop {
+      font-size: 64px;
+    }
+
+    margin: 0 0 32px 0;
+
+    @include onTablet {
+      margin: 0;
+    }
+  }
+
+  &__text {
+    font-size: 23px;
+    font-weight: 500;
+    width: 100%;
+
+    @include onTablet {
+      max-width: 288px;
+    }
+    @include onDesktop {
+      max-width: 498px;
+    }
+  }
+}

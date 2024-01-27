@@ -1,0 +1,18 @@
+.section {
+  padding-bottom: 94px;
+
+  @include onTablet {
+    padding-bottom: 120px;
+  }
+  @include onDesktop {
+    padding-bottom: 160px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    text-align: center;
+  }
+}

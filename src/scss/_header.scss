@@ -7,6 +7,12 @@
   height: 100vh;
   width: 100%;
 
+  margin-bottom: 60px;
+
+  @include onTablet {
+    margin-bottom: 120px;
+  }
+
   &__title {
     position: absolute;
     left: 0;
