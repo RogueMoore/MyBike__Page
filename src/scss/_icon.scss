@@ -1,0 +1,48 @@
+.icon {
+  background-size: cover;
+  background-position: center;
+
+  width: 24px;
+  height: 24px;
+
+  @include onTablet {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__phone {
+    background-image: url(../images/svg/icon-phone.svg);
+  }
+  &__burger {
+    background-image: url(../images/svg/icon-burger.svg);
+
+    &:hover {
+      background-image: url(../images/svg/icon-burger-hover.svg);
+    }
+  }
+
+  &__logo {
+    background-image: url(../images/svg/logo-mobile.svg);
+    background-repeat: no-repeat;
+
+    width: 130px;
+    height: 38px;
+
+    @include onTablet {
+      background-image: url(../images/svg/logo.svg);
+      width: 187px;
+      height: 56px;
+    }
+  }
+
+  &-header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+
+    @include onTablet {
+      gap: 32px;
+    }
+  }
+}

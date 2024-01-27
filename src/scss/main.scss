@@ -1,11 +1,13 @@
 //utilities
+@import "../utilities/modern-normalize.css";
 @import "../utilities/reset";
 @import "../utilities/vars";
 @import "../utilities/mixins";
-@import "../utilities/modern-normalize.css";
+@import "../utilities/grid";
 
 //styles
 @import "./page";
+@import "./container";
 @import "./header";
 @import "./top-actions";
 @import "./icon";
