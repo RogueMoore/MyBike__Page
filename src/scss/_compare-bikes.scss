@@ -1,0 +1,60 @@
+.compare-bikes {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include onDesktop {
+      flex-direction: row;
+      gap: 24px;
+    }
+  }
+
+  &__list {
+    width: 280px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 40px;
+    }
+
+    @include onTablet {
+      width: 392px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 48px;
+      }
+    }
+    @include onDesktop {
+      width: 324px;
+
+      &:not(:last-of-type) {
+        margin: 0;
+      }
+    }
+  }
+
+  &__image {
+    height: 228px;
+    width: 280px;
+
+    margin: 0 0 32px 0;
+
+    @include onTablet {
+      width: 392px;
+      height: 316px;
+    }
+    @include onDesktop {
+      width: 324px;
+      height: 256px;
+    }
+  }
+
+  &__name {
+    margin: 0 0 8px 0;
+  }
+
+  &__description {
+    margin: 0 0 16px 0;
+  }
+}
