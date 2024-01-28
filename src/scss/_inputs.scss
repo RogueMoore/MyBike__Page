@@ -1,0 +1,55 @@
+.inputs {
+  display: block;
+  margin: 0 0 48px 0;
+
+  @include onTablet {
+    width: 288px;
+    margin: 0;
+  }
+  @include onDesktop {
+    width: 411px;
+  }
+
+  &__field {
+    margin: 0 0 16px 0;
+    padding: 14px 16px 14px 16px;
+
+    border: 1px solid #f8f8fa;
+
+    border-radius: 40px;
+    background: #f8f8fa;
+    width: 100%;
+
+    outline: none;
+
+    &:hover {
+      border: 1px solid #d5d7de;
+    }
+    &:focus {
+      border: 1px solid #292929;
+    }
+
+    &::placeholder {
+      color: #7e7e83;
+      line-height: 20px;
+    }
+
+    &:hover::placeholder,
+    &:focus::placeholder {
+      color: #292929;
+    }
+
+    @include onTablet {
+      max-width: 288px;
+    }
+    @include onDesktop {
+      max-width: 411px;
+    }
+  }
+
+  &__textarea {
+    margin: 0 0 32px 0;
+    resize: none;
+    height: 148px;
+  }
+}

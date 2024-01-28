@@ -1,0 +1,29 @@
+.contacts {
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include onTablet {
+      flex-direction: row;
+      gap: 24px;
+    }
+    @include onDesktop {
+      gap: 200px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+  }
+
+  &__link {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+
+    &:not(:last-of-type) {
+      margin: 0 0 24px 0;
+    }
+  }
+}
