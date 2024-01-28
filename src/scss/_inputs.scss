@@ -22,6 +22,8 @@
 
     outline: none;
 
+    transition: all 0.3s;
+
     &:hover {
       border: 1px solid #d5d7de;
     }
@@ -32,6 +34,7 @@
     &::placeholder {
       color: #7e7e83;
       line-height: 20px;
+      transition: color 0.3s;
     }
 
     &:hover::placeholder,
