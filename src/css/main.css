@@ -1275,7 +1275,34 @@ p {
   }
 }
 .icon__phone {
+  position: relative;
   background-image: url(../images/svg/icon-phone.svg);
+}
+.icon__phone::before {
+  content: "+1 234 555-55-55";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%);
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0 16px 0 0;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  pointer-events: none;
+  opacity: 0;
+}
+@media (min-width: 1260px) {
+  .icon__phone:hover::before {
+    pointer-events: all;
+    opacity: 1;
+  }
 }
 .icon__burger {
   background-image: url(../images/svg/icon-burger.svg);
