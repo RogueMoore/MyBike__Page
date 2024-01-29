@@ -1077,6 +1077,9 @@ p {
   color: #fff;
   scroll-behavior: smooth;
 }
+.page__body--with-menu {
+  overflow: hidden;
+}
 
 .button {
   cursor: pointer;
@@ -1407,6 +1410,9 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     gap: 24px;
   }
 }
@@ -1560,6 +1566,9 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     gap: 24px;
   }
 }
